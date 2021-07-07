@@ -25,4 +25,8 @@
 ### [부울 대수(Boolean Algebra)](부울-대수.md)
 
 ### 논리회로 설계
-- 
+![image](https://user-images.githubusercontent.com/28378553/124735712-418c7080-df51-11eb-879b-56d8cd7293df.png)
+- 카노우 맵에서 두 개의 인접한 칸이 1일 때 인접된 칸을 나타내는 최소항은 두 변수 중에서 공통된 변수 하나만으로 나타낼 수 있다 -> 이러한 성질을 이용하면 주어진 부울식에서 항의 수를 최소화할 수 있다
+- 카노우 맵을 만드는 법   
+![image](https://user-images.githubusercontent.com/28378553/124736710-3c7bf100-df52-11eb-8f94-f4e2c5d86e19.png)
+
