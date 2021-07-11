@@ -10,4 +10,4 @@ Length: Header+Payload 길이
   + UDP로 파일을 공유하는 tftp 서버
   + 라우팅 정보를 공유하는 RIP 프로토콜
 
-### [tftpd로 파일 전송 실습](https://youtu.be/5Woau-EJChw?list=PL0d8NnikouEWcF1jJueLdjRIC4HsUlULi)-
+### [tftpd로 파일 전송 실습](https://youtu.be/5Woau-EJChw?list=PL0d8NnikouEWcF1jJueLdjRIC4HsUlULi)
