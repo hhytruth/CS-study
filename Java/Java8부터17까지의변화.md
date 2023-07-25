@@ -203,6 +203,22 @@ public record Person(String name, int age) {
 - 파일러는 헤더를 통해 내부 필드를 추론
   + 생성자를 작성하지 않아도 되고 toString, equals, hashCode 메소드에 대한 구현을 자동으로 제공
 
+
+ex) 나이 제한하기
+```java
+public record Person(String name, int age) {
+    public Person{
+        if(age < 0) {
+            throw new IllegalArgumentException("Age cannot be negative");
+        }
+    }
+}
+```
+   
+* 레코드의 제한
+  + 레코드는 암묵적으로 final 클래스(상속불가)이고, abstract 선언 불가
+  + 다른 클래스를 상속(extends) 받을 수 없음, 인터페이스 구현(implements)은 가능
+    
 ### NullPointerException 개선
 ```
 author.age = 35;
@@ -221,7 +237,7 @@ public sealed interface SafetyBelt permits Car, Truck {
     String belt();
 }
 ```
-다음과 같이 SfatetyBelt 안전벨트를 선언해놓자.
+다음과 같이 SafetyBelt 안전벨트를 선언해놓자.
 ```java
 public final class Car implements SafetyBelt{
 
